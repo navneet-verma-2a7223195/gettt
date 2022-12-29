@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        /* zoom: 90%; */
+    }
+    </style>
+</head>
+
+<body style=" background:#F8F8FA">
+    <!-- <div class="container-9"> -->
+        <div class="container-fluid-6" style="align-items: center;">
+        <form name="register">
+            <div class="row-3">
+                <h3 id="text-align-10">Get tech hub Quotation form</h3>
+                <div class="col-md-6 bg-size">
+                    
+                        <div class="form-group">
+                            <label for="username">Full Name*</label>
+                            <input type="username" class="form-control-1" id="username" placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Mobile Number*(Use Country Code)</label>
+                            <input type="number" class="form-control-1" id="number" placeholder="mobile no">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Country*</label>
+                            <input type="text" class="form-control-1" placeholder="Country" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Organisation Name</label>
+                            <input type="text" class="form-control-1" placeholder="Organisation" id="pwd">
+                        </div>
+                    <!-- </form> -->
+                </div>
+                <div class="col-md-6 bg-size-1">
+                    <!-- <form name="register"> -->
+                        <div class="form-group">
+                            <label for="email">Email Id*</label>
+                            <input type="email" class="form-control-1" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Place*</label>
+                            <input type="text" class="form-control-1" id="pwd" placeholder="place">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">ZIP Code*</label>
+                            <input type="number" class="form-control-1" id="pwd" placeholder="place">
+                        </div>
+                        <div class="dropdown">
+                            <label for="">Service*</label><br>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1"
+                                data-toggle="dropdown">Service
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Website/App Development Services</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Website/App Maintenace Services</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Video Making Services</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Graphics Design Services</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SM Handling $ Branding Services</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company Legacy Service</a></li>
+                            </ul>
+                        </div>
+                  </div>
+                <!-- </form> -->
+            </div>
+            <div class="row-5">
+                <!-- <form name="register"> -->
+                <div class="col-lg-12">
+                    <div class="form-group-1">
+                        <label class="bg-size-3" for="pwd">Message*(Product Details & Quantity)</label>
+                        <input type="text" class="form-control-2" id="" placeholder="Message">
+                    </div>
+                </div>
+            <!-- </form> -->
+            </div>
+            <button type="submit" onclick="return checking()" class="btn-22 btn-default">Submit</button>
+        </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function checking() {
+      var username = document.forms["register"]["username"].value;
+      if (username == null || username == "") {
+         alert("Please enter the name. Can’t be blank or empty !!!");
+         return false;
+      }
+
+      var email = document.forms["register"]['email'].value;
+      if (email == null || email == "") {
+         alert("Please enter the email address. Can’t be blank or empty !!!");
+         return false;
+      }
+
+      var pass = document.forms["register"]['pwd'].value;
+      if (pass == null || pass == "") {
+         alert("Please enter the text. Can’t be blank or empty !!!");
+         return false;
+      }
+
+    //   var cpwd=document.forms["register"]["cpwd"].value;
+    //   if(pass!=cpwd){
+    //     alert("Re Confirm Password!!!");
+    //     return false;
+    //   }
+
+    //   var checkbox = document.getElementById("checkbox");
+    //   if(!checkbox.checked){
+    //     alert("Please accept the terms and conditions...");
+    //     return false;
+    //   }
+   }
+   </script>
+</body>
+</html>
